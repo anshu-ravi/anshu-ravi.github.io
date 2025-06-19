@@ -1,12 +1,291 @@
 ---
 layout: page
 title: About Me
-description: This is what I do.
+description: Get to know the person behind the code
 background: '/img/bg-about.jpg'
 ---
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed quisquam ut perspiciatis, repudiandae nulla animi iste vel, praesentium repellendus molestias aliquid consequatur, earum rem qui error voluptates eius enim consequuntur!</p>
+<div class="about-container">
+  <!-- Main About Content -->
+  <div class="about-content">
+    <div class="intro-section">
+      <p class="lead">I'm a Data Scientist at Deloitte where I architect end-to-end machine learning and analytics solutions for enterprise clients. My days involve creating LLM workflows for document processing, working with geospatial data for location analytics, and creating ML-driven portfolio optimization models.</p>
+    </div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex alias, earum consectetur quia natus ducimus voluptate explicabo, hic porro reprehenderit, quasi? Tenetur ipsum distinctio laboriosam perspiciatis officiis dolore, architecto id.</p>
+    <div class="journey-section">
+      <h3><i class="fas fa-route"></i> My Journey</h3>
+      <p>My path into AI started during my dual degree in Business Administration and Data Science. The combination taught me that the coolest algorithm means nothing if it doesn't solve a real problem – a lesson I carry into every project.</p>
+    </div>
 
-<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam inventore aspernatur repellendus incidunt adipisci modi voluptates recusandae iste eligendi, repudiandae corporis quod aut, optio! Explicabo quaerat unde voluptatem! Itaque, eum!</p>
+    <div class="future-section">
+      <h3><i class="fas fa-rocket"></i> Looking Ahead</h3>
+      <p>I'm eager to dive deeper into AI engineering and LLMOps, where I can focus on building production-ready AI systems from the ground up. There's something fascinating about the intersection of cutting-edge research and practical engineering challenges, and I want to be part of teams that are solving the hard problems of scaling AI reliably.</p>
+    </div>
+
+    <div class="personal-section">
+      <h3><i class="fas fa-heart"></i> Beyond the Code</h3>
+      <p>When I'm not working with neural networks, you'll find me playing spikeball or padel, getting way too competitive at Mario Kart, listening to podcasts (BG2 Pod, MLST, No Priors AI, Morning Brew Daily), or cozied up with a book.</p>
+      
+    </div>
+  </div>
+
+  <!-- Education & Skills Sidebar -->
+  <div class="sidebar-content">
+    <div class="education-card">
+      <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+      <div class="education-item">
+        <h4>Dual Degree Program</h4>
+        <p class="degree">Business Administration + Data Science</p>
+        <p class="school">IE University, Madrid, Spain</p>
+        <p class="year">2019 - 2024</p>
+      </div>
+      <div class="education-item">
+        <h4>Exchange Semester</h4>
+        <p class="degree">Computer Science</p>
+        <p class="school">Cornell University, Ithaca, USA</p>
+        <p class="year">August 2022 - December 2022</p>
+      </div>
+    </div>
+
+    <div class="skills-card">
+      <h3><i class="fas fa-code"></i> Technical Skills</h3>
+      <div class="skills-grid">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Machine Learning</span>
+        <span class="skill-tag">Deep Learning</span>
+        <span class="skill-tag">LLMs</span>
+        <span class="skill-tag">MLOps</span>
+        <span class="skill-tag">Snowflake</span>
+        <span class="skill-tag">Azure</span>
+        <span class="skill-tag">Geospatial Analysis</span>
+      </div>
+    </div>
+
+    <div class="connect-card">
+      <h3><i class="fas fa-comments"></i> Let's Connect</h3>
+      <p>Feel free to reach out if you want to chat about LLMs, AI challenges, or debate whether Rainbow Road is actually the best Mario Kart track.</p>
+      <div class="connect-buttons">
+        <a href="mailto:r.anshumaan01@gmail.com" class="btn btn-outline-primary">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/anshumaanravi/" class="btn btn-outline-primary">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.about-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.about-content {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section .lead {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.journey-section,
+.future-section,
+.personal-section {
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.personal-section {
+  border-bottom: none;
+}
+
+.about-content h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-content h3 i {
+  color: #4285f4;
+  font-size: 1.2rem;
+}
+
+.about-content p {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.interest-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.interest-item i {
+  color: #4285f4;
+  font-size: 1.1rem;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.education-card,
+.skills-card,
+.connect-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.education-card h3,
+.skills-card h3,
+.connect-card h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.education-card h3 i,
+.skills-card h3 i,
+.connect-card h3 i {
+  color: #4285f4;
+}
+
+.education-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.education-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.education-item h4 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.education-item .degree {
+  color: #495057;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.education-item .school,
+.education-item .year {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.connect-card p {
+  color: #6c757d;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.connect-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connect-buttons .btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .about-content {
+    padding: 30px 25px;
+  }
+  
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-content {
+    padding: 25px 20px;
+  }
+  
+  .about-content h3 {
+    font-size: 1.2rem;
+  }
+  
+  .intro-section .lead {
+    font-size: 1.1rem;
+  }
+}
+</style>

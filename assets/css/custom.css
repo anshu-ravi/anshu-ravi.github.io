@@ -191,16 +191,25 @@
 }
 
 /* Override default navbar for homepage */
-body.homepage #mainNav {
+#mainNav {
   background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
 }
 
-body.homepage #mainNav .navbar-brand,
-body.homepage #mainNav .nav-link {
-  color: #2c3e50 !important;
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+  color: #000000 !important;
+  font-weight: 500;
 }
 
-body.homepage #mainNav .nav-link:hover {
+#mainNav .nav-link:hover {
   color: #4285f4 !important;
+}
+
+#mainNav .navbar-toggler {
+  border-color: #000000;
+}
+
+#mainNav .navbar-toggler .fa-bars {
+  color: #000000;
 }
